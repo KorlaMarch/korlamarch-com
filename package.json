@@ -1,0 +1,30 @@
+{
+  "name": "korlamarch-com",
+  "description": "a small personal website on a great big internet",
+  "version": "0.2.0",
+  "author": "Khemarat Boonyapaluk",
+  "dependencies": {
+    "gatsby": "^2.0.76",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.0.7",
+    "node-sass": "^4.11.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KorlaMarch/korlamarch-com/"
+  }
+}
