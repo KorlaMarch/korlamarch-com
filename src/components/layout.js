@@ -1,55 +1,58 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import './all.sass'
+import useSiteMetadata from './SiteMetadata'
+import { withPrefix } from 'gatsby'
 
-import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Contact from './Contact'
-import Footer from './Footer'
+const TemplateWrapper = ({ children }) => {
+  const { title, description } = useSiteMetadata()
+  return (
+    <div>
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
 
-class Layout extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isMenuVisible: false,
-            loading: 'is-loading'
-        }
-        this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${withPrefix('/')}img/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix('/')}img/favicon-32x32.png`}
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix('/')}img/favicon-16x16.png`}
+          sizes="16x16"
+        />
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
+        <link
+          rel="mask-icon"
+          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+          color="#ff4400"
+        />
+        <meta name="theme-color" content="#fff" />
 
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
-
-    handleToggleMenu() {
-        this.setState({
-            isMenuVisible: !this.state.isMenuVisible
-        })
-    }
-
-    render() {
-        const { children } = this.props
-
-        return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children}
-                    <Contact />
-                    <Footer />
-                </div>
-                <Menu onToggleMenu={this.handleToggleMenu} />
-            </div>
-        )
-    }
+        <meta property="og:type" content="business.business" />
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content="/" />
+        <meta
+          property="og:image"
+          content={`${withPrefix('/')}img/og-image.jpg`}
+        />
+      </Helmet>
+      <Navbar />
+      <div>{children}</div>
+      <Footer />
+    </div>
+  )
 }
 
-export default Layout
+export default TemplateWrapper
