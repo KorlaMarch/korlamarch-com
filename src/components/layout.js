@@ -1,20 +1,26 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import Navbar from './Navbar'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ isNav, children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <link
+          href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap"
+          rel="stylesheet"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -48,11 +54,14 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      {isNav ? <Navbar /> : null}
       <div>{children}</div>
-      <Footer />
     </div>
   )
+}
+
+TemplateWrapper.propTypes = {
+  isNav: PropTypes.bool,
 }
 
 export default TemplateWrapper
