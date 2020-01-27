@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
-export const AboutPageTemplate = ({ title }) => {
+export const WorksPageTemplate = ({ title }) => {
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -13,11 +13,15 @@ export const AboutPageTemplate = ({ title }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <div className="content">
-                I am a student at Brown University, studying Computer Science
-                (Sc.B.) and Engineering (A.B.). My interests lie in robotics,
-                low-level software/hardware, and electronics.
-              </div>
+              <ul
+                style={{
+                  listStyle: "disc outside"
+                }}
+              >
+                <li>Monitor - Brown Design Workshop</li>
+                <li>Sunlab Consultant</li>
+                <li>ENGN 520: Electronic and Circuit TA</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -26,16 +30,16 @@ export const AboutPageTemplate = ({ title }) => {
   );
 };
 
-AboutPageTemplate.propTypes = {
+WorksPageTemplate.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-const AboutPage = () => {
+const WorksPage = () => {
   return (
     <Layout isNav>
-      <AboutPageTemplate title="Khemarat Boonyapaluk" />
+      <WorksPageTemplate title="Works" />
     </Layout>
   );
 };
 
-export default AboutPage;
+export default WorksPage;
