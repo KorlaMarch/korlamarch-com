@@ -9,8 +9,8 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
     className="container"
     style={{
       maxWidth: "40rem",
-      marginLeft: "1rem",
-      marginRight: "1rem"
+      paddingLeft: "1rem",
+      paddingRight: "1rem"
     }}
   >
     <section
