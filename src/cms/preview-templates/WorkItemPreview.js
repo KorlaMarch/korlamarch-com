@@ -4,26 +4,26 @@ import { WorkItemTemplate } from "../../templates/work-item";
 import WorkCard from "../../components/WorkCard";
 
 const WorkItemPreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(["data", "tags"]);
-  const images = entry.getIn(["data", "images"]).toJS();
+  const data = entry.getIn(["data"]).toJS();
+  const body = widgetFor("body")
 
   return (
     <div>
       <WorkCard
         key="a"
-        featured={entry.getIn(["data", "featured"])}
-        image={images[0]}
-        title={entry.getIn(["data", "title"])}
-        date={entry.getIn(["data", "startdate"])}
+        featured={data.featured}
+        image={data.images && data.images[0]}
+        title={data.title}
+        date={data.startdate.toString()}
         slug="#"
-        description={widgetFor("body").substring(0, 200)}
+        description={body}
       />
 
       <WorkItemTemplate
-        content={widgetFor("body")}
-        description={entry.getIn(["data", "description"])}
-        tags={tags && tags.toJS()}
-        title={entry.getIn(["data", "title"])}
+        content={body}
+        description={data.description}
+        tags={data.tags}
+        title={data.title}
       />
     </div>
   );
