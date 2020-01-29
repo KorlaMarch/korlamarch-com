@@ -27,11 +27,38 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "work"
+    label: "Work"
+    folder: "src/pages/works"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Start Date"
+        name: "startdate"
+        widget: "datetime"
+        dateFormat: "MM.YYYY"
+        timeFormat: false
+      - label: "End Date"
+        name: "enddate"
+        widget: "datetime"
+        dateFormat: "MM.YYYY"
+        timeFormat: false    
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured", name: "featured", widget: "boolean"}
+      - label: "Images"
+        name: "image"
+        widget: "list"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
   - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Main Page"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
