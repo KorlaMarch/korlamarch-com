@@ -5,7 +5,7 @@ import WorkCard from "../../components/WorkCard";
 
 const WorkItemPreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS();
-  const body = widgetFor("body")
+  const body = widgetFor("body");
 
   return (
     <div>
@@ -14,7 +14,7 @@ const WorkItemPreview = ({ entry, widgetFor }) => {
         featured={data.featured}
         image={data.images && data.images[0]}
         title={data.title}
-        date={data.startdate.toString()}
+        date={data.startdate && data.startdate.toString()}
         slug="#"
         description={body}
       />
