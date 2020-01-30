@@ -8,9 +8,11 @@ export const WorkCard = ({
   featured,
   image,
   title,
-  date,
+  startdate,
+  enddate,
   slug,
-  description
+  description,
+  body
 }) => {
   return (
     <div className="is-parent column is-6" key={key}>
@@ -30,16 +32,21 @@ export const WorkCard = ({
               />
             </div>
           ) : null}
-          <p className="post-meta">
-            <Link className="title has-text-primary is-size-4" to={slug}>
+          <div>
+            <Link
+              className="title has-text-primary is-size-4 is-block"
+              to={slug}
+            >
               {title}
             </Link>
-            <span> &bull; </span>
-            <span className="subtitle is-size-5 is-block">{date}</span>
-          </p>
+            <p className="subtitle is-size-5 is-block">
+              {startdate} - {enddate ? enddate : "Present"}
+            </p>
+            <p className="subtitle is-size-7">{description}</p>
+          </div>
         </header>
         <p>
-          {description}
+          {body}
           <br />
           <br />
         </p>

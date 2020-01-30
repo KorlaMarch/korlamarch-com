@@ -16,11 +16,13 @@ class WorksList extends React.Component {
             <WorkCard
               key={post.id}
               featured={post.frontmatter.featured}
-              image={post.frontmatter.images[0]}
+              image={post.frontmatter.images && post.frontmatter.images[0]}
               title={post.frontmatter.title}
-              date={post.frontmatter.date}
+              startdate={post.frontmatter.startdate}
+              enddate={post.frontmatter.enddate}
               slug={post.fields.slug}
-              description={post.excerpt}
+              description={post.frontmatter.description}
+              body={post.excerpt}
             />
           ))}
       </div>
@@ -41,12 +43,12 @@ export default () => (
     query={graphql`
       query WorksListQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: DESC, fields: [frontmatter___enddate] }
           filter: { frontmatter: { templateKey: { eq: "work-item" } } }
         ) {
           edges {
             node {
-              excerpt(pruneLength: 300)
+              excerpt(pruneLength: 200)
               id
               fields {
                 slug
@@ -54,8 +56,10 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                startdate(formatString: "MMMM YYYY")
+                enddate(formatString: "MMMM YYYY")
                 featured
+                description
                 images {
                   childImageSharp {
                     fluid(maxWidth: 240, quality: 100) {
