@@ -5,6 +5,8 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Slider from "react-slick";
+import Img from "gatsby-image";
 
 export const WorkItemTemplate = ({
   content,
@@ -12,7 +14,8 @@ export const WorkItemTemplate = ({
   description,
   tags,
   title,
-  helmet
+  helmet,
+  images
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -26,6 +29,23 @@ export const WorkItemTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            {images ? (
+              <div
+                style={{
+                  marginBottom: "2rem",
+                  padding: "40px",
+                  background: "#d6400033"
+                }}
+              >
+                <Slider dots infinite speed="500">
+                  {images.map(image => (
+                    <div>
+                      <Img fluid={image.childImageSharp.fluid} />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            ) : null}
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -74,6 +94,7 @@ const WorkItem = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        images={post.frontmatter.images}
       />
     </Layout>
   );
@@ -93,9 +114,17 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        startdate(formatString: "MMMM YYYY")
+        enddate(formatString: "MMMM YYYY")
         title
         description
+        images {
+          childImageSharp {
+            fluid(maxWidth: 240, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags
       }
     }
