@@ -32,9 +32,6 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
       </div>
     </section>
     <nav className="level">
-      <Link to="/" className="level-item">
-        Home
-      </Link>
       <Link to="/works" className="level-item">
         Works
       </Link>
