@@ -16,7 +16,9 @@ export const AboutPageTemplate = ({ title }) => {
               <div className="content">
                 I am a student at Brown University, studying Computer Science
                 (Sc.B.) and Engineering (A.B.). My interests lie in robotics,
-                low-level software/hardware, and electronics.
+                computer system and low-level software/hardware. I don't have a
+                lot of things here yet. Checkout <a href="/cv.pdf">my resume</a>{" "}
+                instead!
               </div>
             </div>
           </div>

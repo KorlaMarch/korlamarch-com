@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
     </nav>
     <p>{intro}</p>
     <section className="section">
-      <h3 className="title is-3">My works</h3>
+      <h3 className="title is-3">What am I doing right now!</h3>
       <ul
         style={{
           listStyle: "disc outside"
@@ -53,6 +53,10 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
         <li>Monitor - Brown Design Workshop</li>
         <li>Sunlab Consultant</li>
         <li>ENGN 520: Electronic and Circuit TA</li>
+        <li>Many hard computer classes ._.</li>
+        <li>
+          Trying to get an internship somewhere for the upcoming summer(?)
+        </li>
       </ul>
     </section>
   </div>

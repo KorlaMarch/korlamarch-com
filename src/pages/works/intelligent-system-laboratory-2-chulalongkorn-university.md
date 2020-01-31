@@ -4,7 +4,7 @@ title: "Intelligent System Laboratory 2, Chulalongkorn University"
 startdate: 2018-06-30T02:07:09.407Z
 enddate: 2018-08-30T02:07:09.416Z
 description: Research Intern
-featured: false
+featured: true
 images:
   - /img/flavor_wheel.jpg
   - /img/chemex.jpg
