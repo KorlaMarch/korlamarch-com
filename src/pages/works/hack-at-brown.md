@@ -4,6 +4,9 @@ title: Hack@Brown
 startdate: 2019-09-30T02:04:17.559Z
 description: Organizer, Hardware Team
 featured: false
+images:
+  - /img/hackatbrown/hatb1.jpg
+  - /img/hackatbrown/hatb2.jpg
 tags:
   - Engineering
 ---

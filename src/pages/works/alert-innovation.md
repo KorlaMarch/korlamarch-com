@@ -5,6 +5,9 @@ startdate: 2019-06-30T02:04:17.559Z
 enddate: 2019-08-30T02:04:17.570Z
 description: Embedded Software Engineer Intern
 featured: true
+images:
+  - /img/alert.jpg
+  - /img/alert.jpg
 tags:
   - C++
   - Programming

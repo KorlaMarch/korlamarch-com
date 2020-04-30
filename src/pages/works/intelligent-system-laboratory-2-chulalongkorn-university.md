@@ -6,8 +6,8 @@ enddate: 2018-08-30T02:07:09.416Z
 description: Research Intern
 featured: true
 images:
-  - /img/flavor_wheel.jpg
-  - /img/chemex.jpg
+  - /img/isl2.jpg
+  - /img/isl2.jpg
 tags:
   - C++
   - Robotics

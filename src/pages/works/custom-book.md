@@ -5,6 +5,10 @@ startdate: 2018-10-01T02:04:17.559Z
 enddate: 2019-01-30T02:04:17.570Z
 description: Full Stack Web Developer
 featured: false
+images:
+  - /img/custombook/home.png
+  - /img/custombook/upload.png
+  - /img/custombook/admin.png
 tags:
   - Web
 ---
