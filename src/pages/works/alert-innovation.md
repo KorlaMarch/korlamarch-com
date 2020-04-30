@@ -7,7 +7,6 @@ description: Embedded Software Engineer Intern
 featured: true
 images:
   - /img/alert.jpg
-  - /img/alert.jpg
 tags:
   - C++
   - Programming
