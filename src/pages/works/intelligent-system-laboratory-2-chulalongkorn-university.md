@@ -1,12 +1,11 @@
 ---
 templateKey: work-item
-title: "Intelligent System Laboratory 2, Chulalongkorn University"
+title: Intelligent System Laboratory 2, Chulalongkorn University
 startdate: 2018-06-30T02:07:09.407Z
 enddate: 2018-08-30T02:07:09.416Z
 description: Research Intern
 featured: true
 images:
-  - /img/isl2.jpg
   - /img/isl2.jpg
 tags:
   - C++
