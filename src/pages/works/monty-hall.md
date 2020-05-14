@@ -3,7 +3,7 @@ templateKey: work-item
 title: Monty Hall
 startdate: 2017-11-30T19:20:44.049Z
 enddate: 2017-11-01T04:00:00.000Z
-description: "-"
+description: ""
 featured: false
 images:
   - /img/monty.png
