@@ -3,7 +3,6 @@ backend:
   repo: KorlaMarch/korlamarch-com
   branch: master
   site_domain: korlamarch.com
-  base_url: https://korlamarch.com
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
