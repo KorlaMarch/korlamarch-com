@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: git-github
+  repo: KorlaMarch/korlamarch-com
   branch: master
+  site_domain: korlamarch.com
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
