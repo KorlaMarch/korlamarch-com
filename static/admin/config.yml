@@ -31,12 +31,13 @@ collections:
         default: ""
         dateFormat: "MM.YYYY"
         timeFormat: false    
-      - {label: "Description", name: "description", widget: "text"}
+        required: false
+      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Featured", name: "featured", widget: "boolean"}
       - label: "Images"
         name: "images"
         widget: "list"
-        field: {label: Image, name: image, widget: image}
+        field: {label: Image, name: image, widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
