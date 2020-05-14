@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: KorlaMarch/korlamarch-com
   branch: master
   site_domain: korlamarch.com
