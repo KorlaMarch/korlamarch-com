@@ -16,6 +16,8 @@ const TemplateWrapper = ({ isNav, children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <script src="https://kit.fontawesome.com/f8964246ec.js" crossorigin="anonymous"></script>
 
         <link
           href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap"

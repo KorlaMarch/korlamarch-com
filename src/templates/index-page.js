@@ -59,6 +59,34 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
         <li>Surviving a pendamic...</li>
       </ul>
     </section>
+    <section className="section">
+      <nav className="level">
+        <div className="level-item has-text-centered">
+          <div>
+            <p className="heading">Github</p>
+            <a className="title" href="https://github.com/KorlaMarch/">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div className="level-item has-text-centered">
+          <div>
+            <p className="heading">LinkedIn</p>
+            <a className="title" href="https://www.linkedin.com/in/khemarat-boonyapaluk/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div className="level-item has-text-centered">
+          <div>
+            <p className="heading">Codeforce</p>
+            <a className="title" href="https://codeforces.com/profile/korla.march">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
   </div>
 );
 
