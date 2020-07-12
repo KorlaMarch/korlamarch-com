@@ -54,3 +54,11 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: "Intro Text", name: introText, widget: string}
+      - file: "src/pages/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: "Proflie Picture", name: image, widget: image, required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
