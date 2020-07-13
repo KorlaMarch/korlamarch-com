@@ -141,6 +141,14 @@ $menu-label-color: $white-ter
   margin-bottom: 2rem !important;
   background-color: #ffeb3b;
 
+.nav-title
+  background-color: $danger;
+  color: $danger-invert;
+
+a.nav-title:hover, a.nav-title:focus
+  background-color: mix(black, $danger, 10%) !important;
+  color: $danger-invert !important; 
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
