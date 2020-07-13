@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 
 export const IndexPageTemplate = ({ title, subheading, intro }) => (
   <>
-  <div className="container index-header">
+  <div className="index-header">
     <section className="section">
       <div className="container">
         <h1
@@ -20,25 +20,32 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
         <p className="subtitle has-text-centered">{subheading}</p>
       </div>
     </section>
-    <nav className="level has-background-white py-1 px-2">
-      <Link to="/works" className="level-item index-nav">
-        Works
-      </Link>
-      <Link to="/about" className="level-item index-nav">
-        About
-      </Link>
-      <a href="/cv.pdf" className="level-item index-nav">
-        CV
-      </a>
-    </nav>
+    <div className="has-background-white">
+      <nav
+        className="container level py-1 px-2"
+        style={{
+          maxWidth: "40rem"
+        }}
+      >
+        <Link to="/works" className="level-item index-nav">
+          Works
+        </Link>
+        <Link to="/about" className="level-item index-nav">
+          About
+        </Link>
+        <a href="/cv.pdf" className="level-item index-nav">
+          CV
+        </a>
+      </nav>
+    </div>
   </div>
   <div
-  className="container"
-  style={{
-    maxWidth: "40rem",
-    paddingLeft: "1rem",
-    paddingRight: "1rem"
-  }}
+    className="container"
+    style={{
+      maxWidth: "40rem",
+      paddingLeft: "1rem",
+      paddingRight: "1rem"
+    }}
   >
     <p>{intro}</p>
     <section className="section">

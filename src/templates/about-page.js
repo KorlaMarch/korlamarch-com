@@ -7,24 +7,22 @@ import { HTMLContent } from "../components/Content";
 
 export const AboutPageTemplate = ({ title, picture, content }) => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <figure className="image profile" >
-                <Img fluid={picture.childImageSharp.fluid} alt="A picture of March" />
-              </figure>
+    <div className="container">
+      <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="section">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {title}
+            </h2>
+            <figure className="image profile" >
+              <Img fluid={picture.childImageSharp.fluid} alt="A picture of March" />
+            </figure>
 
-              <HTMLContent content={content} />
-            </div>
+            <HTMLContent content={content} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
