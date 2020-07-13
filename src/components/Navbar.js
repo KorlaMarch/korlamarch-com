@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -48,7 +47,10 @@ const Navbar = class extends React.Component {
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
+              role="button"
+              tabIndex={0}
               onClick={() => this.toggleHamburger()}
+              onKeyDown={({keyCode}) => keyCode !== 9 && this.toggleHamburger()}
             >
               <span />
               <span />
