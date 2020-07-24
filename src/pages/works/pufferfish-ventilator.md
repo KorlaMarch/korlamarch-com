@@ -2,7 +2,6 @@
 templateKey: work-item
 title: Pufferfish Ventilator
 startdate: 2020-05-24T03:02:45.149Z
-enddate: ""
 description: Main Embedded Software Engineer
 featured: true
 tags:

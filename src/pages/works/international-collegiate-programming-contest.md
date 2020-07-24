@@ -2,7 +2,6 @@
 templateKey: work-item
 title: International Collegiate Programming Contest
 startdate: 2019-10-30T00:54:31.245Z
-enddate: ""
 description: Brown CS Team
 featured: false
 images:
