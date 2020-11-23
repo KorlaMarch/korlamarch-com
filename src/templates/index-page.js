@@ -55,11 +55,9 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
           listStyle: "disc outside"
         }}
       >
-        <li>Firmware Engineer - an Open Source Vantilator Design Group</li>
-        <li>Student Researcher - Bahar Lab (working on Casual Learning and Planning in robot)</li>
+        <li>Hack at Brown - Hardware Team Lead</li>
         <li>Monitor - Brown Design Workshop</li>
         <li>Sunlab Consultant</li>
-        <li>ENGN 520: Electronic and Circuit TA</li>
         <li>Many hard computer classes ._.</li>
         <li>Surviving a pendamic...</li>
       </ul>
