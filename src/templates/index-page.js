@@ -55,7 +55,8 @@ export const IndexPageTemplate = ({ title, subheading, intro }) => (
           listStyle: "disc outside"
         }}
       >
-        <li>Hack at Brown - Hardware Team Lead</li>
+        <li>Teaching Assistant - CSCI 1380 Distributed Computer System</li>
+        <li>Taping out an accelerator ASIC - Efabless Open MPW Shuttle Program</li>
         <li>Monitor - Brown Design Workshop</li>
         <li>Sunlab Consultant</li>
         <li>Many hard computer classes ._.</li>
