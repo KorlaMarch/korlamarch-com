@@ -2,6 +2,7 @@
 templateKey: work-item
 title: Brown Design Workshop
 startdate: 2019-09-30T02:04:17.559Z
+enddate: ""
 description: Monitor
 featured: false
 tags:

@@ -1,6 +1,7 @@
 ---
 templateKey: work-item
 title: STEM Outreach Camp
+startdate: 2018-08-01T02:04:17.559Z
 enddate: 2018-08-01T02:04:17.559Z
 description: Facilitator
 featured: false

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
 import WorkCard from "./WorkCard";
+import moment from "moment";
 
 class WorksList extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class WorksList extends React.Component {
               image={post.frontmatter.images && post.frontmatter.images[0]}
               title={post.frontmatter.title}
               startdate={post.frontmatter.startdate}
-              enddate={post.frontmatter.enddate}
+              enddate={post.frontmatter.enddate ? moment(post.frontmatter.enddate).format("MMMM YYYY") : ""}
               slug={post.fields.slug}
               description={post.frontmatter.description}
               body={post.excerpt}
@@ -42,7 +43,7 @@ export default () => (
     query={graphql`
       query WorksListQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___enddate] }
+          sort: { order: DESC, fields: [frontmatter___startdate] }
           filter: { frontmatter: { templateKey: { eq: "work-item" } } }
         ) {
           edges {
@@ -56,7 +57,7 @@ export default () => (
                 title
                 templateKey
                 startdate(formatString: "MMMM YYYY")
-                enddate(formatString: "MMMM YYYY")
+                enddate
                 featured
                 description
                 images {

@@ -2,6 +2,7 @@
 templateKey: work-item
 title: Hack@Brown
 startdate: 2019-09-30T02:04:17.559Z
+enddate: ""
 description: Organizer, Hardware Team
 featured: false
 images:

@@ -40,7 +40,7 @@ export const WorkCard = ({
               {title}
             </Link>
             <p className="subtitle is-size-5 is-block">
-              {startdate ? startdate + " - " : null}
+              {startdate != enddate ? startdate + " - " : null}
               {enddate ? enddate : "Present"}
             </p>
             <p className="subtitle is-size-5">{description}</p>
