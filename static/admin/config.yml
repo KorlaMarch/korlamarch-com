@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: KorlaMarch/korlamarch-com
   branch: master
-  site_domain: korlamarch.com
+  site_domain: korlamarch.netlify.app
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -53,7 +53,8 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: "Intro Text", name: introText, widget: string}
+          - {label: "Intro Text", name: introText, widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about.md"
         label: "About Page"
         name: "about"

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { WorkItemTemplate } from "../../templates/work-item";
 import WorkCard from "../../components/WorkCard";
+import moment from "moment";
 
 const WorkItemPreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS();
@@ -14,9 +15,11 @@ const WorkItemPreview = ({ entry, widgetFor }) => {
         featured={data.featured}
         image={data.images && data.images[0]}
         title={data.title}
-        date={data.startdate && data.startdate.toString()}
+        startdate={data.startdate ? moment(data.startdate).format("MMMM YYYY") : ""}
+        enddate={data.enddate ? moment(data.enddate).format("MMMM YYYY") : ""}
         slug="#"
-        description={body}
+        description={data.description}
+        body={body}
       />
 
       <WorkItemTemplate
