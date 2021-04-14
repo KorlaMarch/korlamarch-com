@@ -1,8 +1,7 @@
 ---
 templateKey: work-item
-title: "CS1380: Distributed System TA "
+title: "CS1380, Distributed System TA "
 startdate: 2021-01-14T07:10:52.232Z
-enddate: ""
 description: ""
 featured: false
 tags:
