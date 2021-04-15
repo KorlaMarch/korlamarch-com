@@ -12,6 +12,7 @@ export const WorkCard = ({
   enddate,
   slug,
   description,
+  tags,
   body
 }) => {
   return (
@@ -39,7 +40,7 @@ export const WorkCard = ({
             >
               {title}
             </Link>
-            <p className="subtitle is-size-5 is-block">
+            <p className="subtitle is-size-6 is-block mb-2">
               {startdate !== enddate ? startdate + " - " : null}
               {enddate ? enddate : "Present"}
             </p>
@@ -51,6 +52,13 @@ export const WorkCard = ({
           <br />
           <br />
         </p>
+        <div class="is-block">
+          {
+            tags && tags.map((x) => (
+              <span class="tag is-success mr-1">{x}</span>
+            ))
+          }  
+        </div>
       </article>
     </div>
   );

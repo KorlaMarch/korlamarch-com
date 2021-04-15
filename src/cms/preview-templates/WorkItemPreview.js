@@ -19,6 +19,7 @@ const WorkItemPreview = ({ entry, widgetFor }) => {
         enddate={data.enddate ? moment(data.enddate).format("MMMM YYYY") : ""}
         slug="#"
         description={data.description}
+        tags={data.tags}
         body={body}
       />
 

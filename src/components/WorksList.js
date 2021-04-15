@@ -23,6 +23,7 @@ class WorksList extends React.Component {
               slug={post.fields.slug}
               description={post.frontmatter.description}
               body={post.excerpt}
+              tags={post.frontmatter.tags}
             />
           ))}
       </div>
@@ -38,7 +39,7 @@ WorksList.propTypes = {
   })
 };
 
-export default () => (
+const WorkListQuery = () => (
   <StaticQuery
     query={graphql`
       query WorksListQuery {
@@ -67,6 +68,7 @@ export default () => (
                     }
                   }
                 }
+                tags
               }
             }
           }
@@ -76,3 +78,5 @@ export default () => (
     render={(data, count) => <WorksList data={data} />}
   />
 );
+
+export default WorkListQuery;

@@ -41,6 +41,9 @@ export const IndexPageTemplate = ({
           <Link to="/works" className="level-item index-nav">
             Works
           </Link>
+          <Link to="/blog" className="level-item index-nav">
+            Blog
+          </Link>
           <Link to="/about" className="level-item index-nav">
             About
           </Link>
@@ -53,14 +56,13 @@ export const IndexPageTemplate = ({
     <div
       className="container"
       style={{
-        maxWidth: "40rem",
+        maxWidth: "45rem",
         paddingLeft: "1rem",
         paddingRight: "1rem"
       }}
     >
       <p>{intro}</p>
       <section className="section">
-        <h3 className="title is-3">What am I doing right now!</h3>
         <PostContent content={content} />
       </section>
       <section className="section">

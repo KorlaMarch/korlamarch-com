@@ -2,8 +2,8 @@
 templateKey: work-item
 title: Hack@Brown
 startdate: 2019-09-30T02:04:17.559Z
-enddate: ""
-description: Organizer, Hardware Team
+enddate: 2021-01-30T02:04:17.559Z
+description: Organizer, Hardware Team Lead
 featured: false
 images:
   - /img/hackatbrown/hatb1.jpg

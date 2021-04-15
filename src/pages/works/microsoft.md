@@ -8,4 +8,4 @@ featured: false
 tags:
   - C++
 ---
-In the Device Team
+In Device Team

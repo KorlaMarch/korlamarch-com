@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import WorksList from "../../components/WorksList";
 
-export const WorksPage = () => {
+const WorksPage = () => {
   return (
     <Layout isNav>
       <div className="container">

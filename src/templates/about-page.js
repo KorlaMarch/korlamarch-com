@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 
-export const AboutPageTemplate = ({ title, picture, content }) => {
+const AboutPageTemplate = ({ title, picture, content }) => {
   return (
     <div className="container">
       <div className="columns">
