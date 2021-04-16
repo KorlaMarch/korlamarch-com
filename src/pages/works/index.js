@@ -4,7 +4,7 @@ import WorksList from "../../components/WorksList";
 
 const WorksPage = () => {
   return (
-    <Layout isNav>
+    <Layout isNav pageTitle="Works">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">

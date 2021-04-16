@@ -84,13 +84,19 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
+                href="https://www.linkedin.com/in/khemarat-boonyapaluk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin is-size-4 has-text-black"></i>
+              </a>
+              <a
+                className="navbar-item"
                 href="https://github.com/KorlaMarch/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
+                <i class="fab fa-github is-size-4 has-text-black"></i>
               </a>
             </div>
           </div>

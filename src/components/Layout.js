@@ -6,14 +6,14 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import Navbar from './Navbar'
 
-const TemplateWrapper = ({ isNav, children }) => {
+const TemplateWrapper = ({ isNav, pageTitle, children }) => {
   const { title, description } = useSiteMetadata()
 
   return (
     <div>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>{title + (pageTitle ? (" | " + pageTitle) : "")}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         

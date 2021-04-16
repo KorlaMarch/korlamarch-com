@@ -36,7 +36,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout isNav>
+    <Layout isNav pageTitle="About">
       <AboutPageTemplate
         title={post.frontmatter.title}
         picture={post.frontmatter.image}
