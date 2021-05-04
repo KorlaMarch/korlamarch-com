@@ -2,16 +2,17 @@
 templateKey: index-page
 title: Khemarat Boonyapaluk
 subheading: Code + Electronics = <3
-introText: ""
+introText: .
 ---
-
 Hi, welcome to my little place in the internet :). My name is Khemarat Boonyapaluk. The name is rather long, so I usually go by March, or KorlaMarch in online accounts. I am a student studying in Computer Science Sc.B. and Engineering A.B. at Brown University with particular interests computer system, low-level software, and hardware design.
 
 ## What am I doing right now!
-- Starting a blog -- yes!! you heard that right, a blog is coming soon
-- Teaching Assistant - CSCI 1380 Distributed Computer System
-- Taping out an accelerator ASIC - Efabless Open MPW Shuttle Program
-- Monitor - Brown Design Workshop
-- Sunlab Consultant
-- Many hard computer classes ._.
-- Surviving a pendamic...
+
+* Firmware Engineer Intern @ Microsoft (device team, working on surface duo)
+* Starting a blog -- yes!! you heard that right, a blog is coming soon
+* Teaching Assistant - CSCI 1380 Distributed Computer System
+* Taping out an accelerator ASIC - Efabless Open MPW Shuttle Program
+* Monitor - Brown Design Workshop
+* Sunlab Consultant
+* Many hard computer classes ._.
+* Surviving a pendamic...
