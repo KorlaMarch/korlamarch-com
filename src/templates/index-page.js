@@ -28,6 +28,13 @@ export const IndexPageTemplate = ({
           >
             {title}
           </h1>
+          <h2 className="subtitle is-2 has-text-centered"
+            style={{
+                fontFamily: "Itim"
+              }}
+            >
+            (March)
+          </h2>
           <p className="subtitle has-text-centered">{subheading}</p>
         </div>
       </section>

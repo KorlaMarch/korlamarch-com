@@ -63,9 +63,7 @@ const WorkListQuery = () => (
                 description
                 images {
                   childImageSharp {
-                    fluid(maxWidth: 240, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(layout: CONSTRAINED)
                   }
                 }
                 tags

@@ -8,11 +8,14 @@ Hi, welcome to my little place in the internet :). My name is Khemarat Boonyapal
 
 ## What am I doing right now!
 
-* Firmware Engineer Intern @ Microsoft (device team, working on surface duo)
-* Starting a blog -- yes!! you heard that right, a blog is coming soon
-* Teaching Assistant - CSCI 1380 Distributed Computer System
-* Taping out an accelerator ASIC - Efabless Open MPW Shuttle Program
-* Monitor - Brown Design Workshop
-* Sunlab Consultant
-* Many hard computer classes ._.
-* Surviving a pendamic...
+* Head Teaching Assistant - CSCI 1380 Distributed Computer System
+* Teaching Assistant - ENGN 1640 Design of Computing System
+* [Head Sunlab Consultant](https://cs.brown.edu/degrees/undergrad/jobs/headconsult/)
+* Trying out Rust for the first time in computer network project!
+* Many cs classes ._.
+
+## News
+- 1/22: Starting a new semester as HTA for CS1380 and TA for ENGN1640, this is going to be so much fun :)
+- 11/21: I will be working at Hudson River Trading as a core developer starting in June 2022. Come by and visit me in NYC!
+- 9/21: I'm working as the new [Head Sunlab Consultant](https://cs.brown.edu/degrees/undergrad/jobs/headconsult/), taking over from Brian and Ian
+- 5/21: Starting my internship as an firmware engineer intern at Microsoft Surface Duo team

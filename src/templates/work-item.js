@@ -6,7 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Slider from "react-slick";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export const WorkItemTemplate = ({
   content,
@@ -18,7 +18,6 @@ export const WorkItemTemplate = ({
   images
 }) => {
   const PostContent = contentComponent || Content;
-
   return (
     <section className="section">
       {helmet || ""}
@@ -40,7 +39,7 @@ export const WorkItemTemplate = ({
                 <Slider dots infinite speed="500">
                   {images.map(image => (
                     <div>
-                      <Img fluid={image.childImageSharp.fluid} />
+                      <GatsbyImage image={getImage(image)} />
                     </div>
                   ))}
                 </Slider>
@@ -120,9 +119,7 @@ export const pageQuery = graphql`
         description
         images {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         tags

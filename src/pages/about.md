@@ -3,7 +3,7 @@ templateKey: about-page
 title: Khemarat Boonyapaluk
 image: /img/profile.jpg
 ---
-Khemarat, also known as March, is a Junior at Brown University. He is concentrating in Computer Science (Sc.B.) and Computer Engineering (A.B.) with a deep passion for computer systems, embedded systems, and electronics. 
+Khemarat, also known as March, is a Senior at Brown University. He is concentrating in Computer Science (Sc.B.) and Computer Engineering (A.B.) with a deep passion for computer systems, embedded systems, and electronics. 
 
 He was born and educated in Thailand, where he found great success in competitive programming. After winning over 30 programming competitions and placing top-5 in the national computer olympiad camp, the Royal Thai government grants him a full-ride scholarship for studying abroad in the US. He then moved to [Northfield Mount Hermon School](https://www.nmhschool.org/) in 2017, and eventually to [Brown University](https://www.brown.edu/) in 2018. 
 

@@ -6,6 +6,7 @@ import './plugins.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import Navbar from './Navbar'
+import moment from "moment";
 
 const TemplateWrapper = ({ isNav, pageTitle, children }) => {
   const { title, description } = useSiteMetadata()
@@ -66,6 +67,7 @@ const TemplateWrapper = ({ isNav, pageTitle, children }) => {
       </Helmet>
       {isNav ? <Navbar /> : null}
       <div>{children}</div>
+      <footer className="footer-text content has-text-centered">Last Updated: {moment().format("MMMM D, Y")}</footer>
     </div>
   )
 }

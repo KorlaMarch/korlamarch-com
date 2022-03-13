@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 
 const AboutPageTemplate = ({ title, picture, content }) => {
+  const profile_img = getImage(picture)
   return (
     <div className="container">
       <div className="columns">
@@ -15,7 +16,7 @@ const AboutPageTemplate = ({ title, picture, content }) => {
               {title}
             </h2>
             <figure className="image profile" >
-              <Img fluid={picture.childImageSharp.fluid} alt="A picture of March" />
+              <GatsbyImage image={profile_img} alt="A picture of March" />
             </figure>
 
             <HTMLContent content={content} />
@@ -63,9 +64,7 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }
