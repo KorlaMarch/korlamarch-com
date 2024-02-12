@@ -71,9 +71,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/works">
                 Works
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -88,7 +85,7 @@ const Navbar = class extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-linkedin is-size-4 has-text-black"></i>
+                <i className="fab fa-linkedin is-size-4 has-text-black"></i>
               </a>
               <a
                 className="navbar-item"
@@ -96,7 +93,7 @@ const Navbar = class extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-github is-size-4 has-text-black"></i>
+                <i className="fab fa-github is-size-4 has-text-black"></i>
               </a>
             </div>
           </div>

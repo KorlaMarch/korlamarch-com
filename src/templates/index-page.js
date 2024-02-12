@@ -48,9 +48,6 @@ export const IndexPageTemplate = ({
           <Link to="/works" className="level-item index-nav">
             Works
           </Link>
-          <Link to="/blog" className="level-item index-nav">
-            Blog
-          </Link>
           <Link to="/about" className="level-item index-nav">
             About
           </Link>
@@ -78,7 +75,7 @@ export const IndexPageTemplate = ({
             <a href="https://github.com/KorlaMarch/">
               <p className="heading">Github</p>
               <div className="title">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </div>
             </a>
           </div>
@@ -86,7 +83,7 @@ export const IndexPageTemplate = ({
             <a href="https://www.linkedin.com/in/khemarat-boonyapaluk/">
               <p className="heading">LinkedIn</p>
               <div className="title">
-                <i class="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
               </div>
             </a>
           </div>
@@ -94,7 +91,7 @@ export const IndexPageTemplate = ({
             <a href="https://codeforces.com/profile/korla.march">
               <p className="heading">Codeforce</p>
               <div className="title">
-                <i class="fas fa-code"></i>
+                <i className="fas fa-code"></i>
               </div>
             </a>
           </div>

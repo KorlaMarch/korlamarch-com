@@ -52,10 +52,10 @@ export const WorkCard = ({
           <br />
           <br />
         </p>
-        <div class="is-block">
+        <div className="is-block">
           {
             tags && tags.map((x) => (
-              <span class="tag is-success mr-1">{x}</span>
+              <span className="tag is-success mr-1">{x}</span>
             ))
           }  
         </div>
